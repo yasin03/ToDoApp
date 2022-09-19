@@ -1,0 +1,73 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+.modal-color {
+  position: absolute;
+  margin: 0.5rem;
+  font-size: 2rem;
+  cursor: pointer;
+  color: rgb(50, 50, 50);
+}
+.todo-container {
+  
+  display: flex;
+  justify-content: center;
+
+  .container-app {
+    background-color: rgba(219, 219, 219, 0.412);
+    border-radius: 0.5rem;
+    margin: 1rem;
+    padding: 0;
+
+    .row {
+      margin: 0;
+      padding: 0;
+
+      .col {
+        padding: 0.5rem 0.5rem;
+      }
+    }
+  }
+}
+
+.navbar-barr {
+  display: flex;
+  padding-inline: 5rem;
+  
+
+  .icon-plus {
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  .brand {
+    padding-left: 2rem;
+  }
+
+  .icon-logo {
+    color: coral;
+  }
+
+  .icon-color {
+    color: #fff;
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+}
+
+.note-form {
+  background-color: rgba(253, 181, 154, 0.981);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+
+  .card-todo {
+    width: 300px;
+  }
+}
