@@ -14,19 +14,34 @@ const ToDoApp = () => {
     setTodos(resp.data);
   };
 
-  const handleCreateTodo = async (value) => {
+  const handleCreateTodo = async (props) => {
+    const { title, message, date, bgColor } = props;
     const params = {
-      message: value,
-      completed: true,
+      title: title,
+      message: message,
+      date: date,
+      bgColor: bgColor,
+      completed: false,
     };
 
     const resp = await createToDo(params);
     setTodos([resp.data, ...todos]);
   };
 
-  const handleUpdateTodo = async (id, completed) => {
+  const handleUpdateTodo = async (
+    id,
+    title,
+    message,
+    date,
+    bgColor,
+    completed
+  ) => {
     const params = {
-      completed: completed,
+      title: title,
+      message: message,
+      date: date,
+      bgColor: bgColor,
+      completed: true,
       id: id,
     };
 

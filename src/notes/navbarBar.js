@@ -1,9 +1,8 @@
 import React from "react";
 import { Navbar, NavbarBrand } from "reactstrap";
 import { BsStickiesFill } from "react-icons/bs";
-import { MdOutlineColorLens } from "react-icons/md";
 import ModalForm from "./modal-form";
-import ModalColor from "./modal-color";
+
 
 const NavbarBar = (props) => {
   const { handleCreateTodo } = props;

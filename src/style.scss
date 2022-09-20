@@ -10,7 +10,6 @@ body {
   color: rgb(50, 50, 50);
 }
 .todo-container {
-  
   display: flex;
   justify-content: center;
 
@@ -34,7 +33,6 @@ body {
 .navbar-barr {
   display: flex;
   padding-inline: 5rem;
-  
 
   .icon-plus {
     color: #fff;
@@ -58,7 +56,6 @@ body {
 }
 
 .note-form {
-  background-color: rgba(253, 181, 154, 0.981);
   border-radius: 0.5rem;
   padding: 1rem;
 }
@@ -69,5 +66,17 @@ body {
 
   .card-todo {
     width: 300px;
+
+    .card-cardbody {
+      height: 120px;
+      overflow-y: scroll;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    .card-cardtitle {
+      padding: 1rem 1rem 0 1rem;
+    }
   }
 }

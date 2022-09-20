@@ -7,7 +7,7 @@ const Notes = (props) => {
   return (
     <>
       {todos.map((todo, i) => (
-        <Col className="card-container"  key={i}>
+        <Col className="card-container" key={i}>
           <Note
             {...todo}
             handleDeleteTodo={handleDeleteTodo}
