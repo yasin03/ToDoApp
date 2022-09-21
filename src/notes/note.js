@@ -21,7 +21,7 @@ const Note = (props) => {
     handleUpdateTodo,
   } = props;
 
-  const [check, setCheck] = useState({ completed });
+  const [check, setCheck] = useState( completed );
 
   const updateTodo = (e) => {
     setCheck(e.target.checked);
