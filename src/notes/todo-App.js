@@ -28,20 +28,9 @@ const ToDoApp = () => {
     setTodos([resp.data, ...todos]);
   };
 
-  const handleUpdateTodo = async (
-    id,
-    title,
-    message,
-    date,
-    bgColor,
-    completed
-  ) => {
+  const handleUpdateTodo = async (id, completed) => {
     const params = {
-      title: title,
-      message: message,
-      date: date,
-      bgColor: bgColor,
-      completed: true,
+      completed: completed,
       id: id,
     };
 

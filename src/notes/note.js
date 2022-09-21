@@ -25,7 +25,8 @@ const Note = (props) => {
 
   const updateTodo = (e) => {
     setCheck(e.target.checked);
-    handleUpdateTodo(id, check);
+    handleUpdateTodo(id,check);
+    console.log(id);
   };
 
   const deleteTodo = () => {
